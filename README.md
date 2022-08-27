@@ -7,3 +7,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
 https://phoenixnap.com/kb/fix-sub-process-usr-bin-dpkg-returned-error-code-1
 
 sudo apt install apt-transport-https
+
+sudo apt autoremove
+sudo apt-get remove linux-image-unsigned-5.4.0-1003-ibm
+sudo apt-get remove docker-ce
