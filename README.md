@@ -30,3 +30,9 @@ reboot
 
 ### 5 - Включаем обновлять кэш
 update_cache = yes
+
+### Не забыть удалить полностью nginx
+sudo apt-get remove nginx*
+###
+sudo apt-get purge nginx*
+kill -9 $(netstat -ntlp | grep nginx | head -n 1 | awk {'print $7'} | cut -d '/' -f 1)
