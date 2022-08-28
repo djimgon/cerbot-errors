@@ -12,6 +12,8 @@ sudo apt autoremove
 sudo apt-get remove linux-image-unsigned-5.4.0-1003-ibm
 sudo apt-get remove docker-ce
 
+apt --fix-broken install
+
 ### 1 - Отключаем кэш
 update_cache: no
 
